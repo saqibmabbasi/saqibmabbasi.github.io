@@ -1,0 +1,102 @@
+[
+    {
+        "companyName": "Feroze1888 Mills Limited",
+        "designation": "Assistant Manager",
+        "fromDate": "Jul 2022",
+        "toDate": "Present",
+        "tasks": [
+            { "task": "Mentoring team members with regards to project requirement for smooth implementation." },
+            { "task": "Liaison with business and vendor team to resolve issues." },
+            { "task": "Requirement analysis, implementation and troubleshooting of customized forms and reports for Oracle EBS R12 HRMS application." },
+            { "task": "Explore new technologies and their feasibility in our organization." }
+        ]
+    },
+    {
+        "companyName": "Feroze1888 Mills Limited",
+        "designation": "Senior Executive Officer",
+        "fromDate": "Jan 2015",
+        "toDate": "Jun 2022",
+        "tasks": [
+            { "task": "Development of Self-Service Portal with Employee Information, Performance Appraisal, Leave Management etc." },
+            { "task": "Mentoring team members with regards to project requirement for smooth implementation." },
+            { "task": "Requirement analysis, implementation and troubleshooting of customized forms and reports for Oracle EBS R12 HRMS application." },
+            { "task": "Implementation of Biometric and Barcode based attendance recording system, with unified display application." }
+        ]
+    },
+    {
+        "companyName": "Karachi International Container Terminal",
+        "designation": "Software Engineer",
+        "fromDate": "Oct 2013",
+        "toDate": "Dec 2014",
+        "tasks": [
+            { "task": "Investigation and correction of issues related to Terminal Operating System named Navis Express." },
+            { "task": "Liaison with business to evaluate requirements for implementation." }
+        ]
+    },
+    {
+        "companyName": "Faysal Bank Limited",
+        "designation": "IT Security Risk and BCP Coordinator",
+        "fromDate": "Jul 2022",
+        "toDate": "Oct 2013",
+        "tasks": [
+            { "task": "Develop business cases to support investments in information security." },
+            { "task": "Performing Risk Assessment from IS perspective for various bank initiatives." },
+            { "task": "Liaison with departments for preparation of Departmental BCPs, by providing guidance related to BIA, RTO, RPO, and Risk Assessment." },
+            { "task": "Liaison with IT for finalization of Technology Recovery Plan (TRP)." },
+            { "task": "Preparation and review of policies and SOPs in-line with corporate strategy." }
+        ]
+    },
+    {
+        "companyName": "Faysal Bank Limited",
+        "designation": "Business analyst",
+        "fromDate": "Jul 2009",
+        "toDate": "Jun 2012",
+        "tasks": [
+            { "task": "Developed migration scripts using Oracle 10g (PL/SQL) during Core Banking System upgrade." },
+            { "task": "Developed interfaces and migration scripts using Oracle 10g during merger with RBS Pakistan." },
+            { "task": "Analyzing business needs and facilitating business users regarding SYMBOLS (core banking solution)." },
+            { "task": "Coordination with vendors for the completion of various projects." }
+        ]
+    },
+    {
+        "companyName": "Sungard System Access",
+        "designation": "Technical Analyst",
+        "fromDate": "Aug 2007",
+        "toDate": "May 2009",
+        "tasks": [
+            { "task": "Streamlined system through patch development and fixes (forms, reports, procedures, scripts)." },
+            { "task": "Provided off-site as well as on-site support to Faysal Bank Limited for various modules of (SYMBOLS)" },
+            { "task": "Liaison between client and offsite/onsite team to resolve issues and facilitate understanding." }
+        ]
+    },
+    {
+        "companyName": "AMZ Access (Pvt.) Ltd.",
+        "designation": "Sr. Software Engineer",
+        "fromDate": "May 2006",
+        "toDate": "Aug 2007",
+        "tasks": [
+            { "task": "Created web presence for HEC (using Joomla CMS) by projecting their services online which encompass scholarship programs, degree attestations and equivalence certificates etc." },
+            { "task": "Presented the web portal and trained users regarding Content Management." }
+        ]
+    },
+    {
+        "companyName": "Karachi Electric Supply Corporation (KESC)",
+        "designation": "Computer Programmer",
+        "fromDate": "Dec 2004",
+        "toDate": "May 2006",
+        "tasks": [
+            { "task": "Development of new three-tier application for Bill generation process. Application catered to consumers of industrial section because of their unique meter, load and tariff rates." },
+            { "task": "Standardized different processes and activities of IT department. Evaluated tenders and quotations of various IT vendors." }
+        ]
+    },
+    {
+        "companyName": "Liaquat National Hospital (LNH)",
+        "designation": "Assistant Sr. Manager Operations",
+        "fromDate": "Jul 2003",
+        "toDate": "Dec 2004",
+        "tasks": [
+            { "task": "Involved in scheduling tasks for different divisions" },
+            { "task": "Analyzed different prospective projects related to functional divisions." }
+        ]
+    }
+]

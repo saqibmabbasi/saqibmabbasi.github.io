@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Urdu",
+        "description": "Mother Tongue",
+        "written": "Fluent",
+        "spoken": "Fluent"
+    },
+    {
+        "name": "English",
+        "description": "Foreign Language",
+        "written": "Fluent",
+        "spoken": "Fluent"
+    }
+]

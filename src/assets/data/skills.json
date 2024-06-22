@@ -1,0 +1,55 @@
+[
+    {
+        "type": "Technical Skills",
+        "skills": 
+        [
+            { 
+                "name": "Oracle EBS R12 (HRMS)",
+                "level": "10"
+            },
+            { 
+                "name": "Oracle Forms, Reports & PL/SQL",
+                "level": "20"
+            },
+            { 
+                "name": "Oracle Database",
+                "level": "30"
+            },
+            { 
+                "name": "MS.NET (C#.NET)",
+                "type": "Technical",
+                "level": "40"
+            },
+            { 
+                "name": "MS SQL Server",
+                "level": "50"
+            },
+            { 
+                "name": "MS Project and Visio",
+                "level": "60"
+            },
+            { 
+                "name": "Angular 7",
+                "level": "70"
+            },
+            { 
+                "name": "Web API",
+                "level": "80"
+            }
+        ]
+    },
+    {
+        "type": "Soft Skills",
+        "skills": 
+        [
+            { 
+                "name": "Team Player",
+                "level": "70"
+            },
+            { 
+                "name": "Communication",
+                "level": "80"
+            }
+        ]
+    }
+]
