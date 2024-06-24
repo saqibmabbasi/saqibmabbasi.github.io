@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Home",
+        "url": "home",
+        "icon": "fas fa-house fa-fw me-3",
+        "title": "Home"
+    },
+    {
+        "name": "About Me",
+        "url": "about-me",
+        "icon": "fa fa-user fa-fw me-3",
+        "title": "About Me"
+    },
+    {
+        "name": "Contact Me",
+        "url": "contact-me",
+        "icon": "fa-regular fa-address-card fa-fw me-3",
+        "title": "Contact Me"
+    },
+    {
+        "name": "Skills",
+        "url": "skills",
+        "icon": "fa-solid fa-toolbox fa-fw me-3",
+        "title": "Skills"
+    },
+    {
+        "name": "Languages",
+        "url": "languages",
+        "icon": "fa-solid fa-comments fa-fw me-3",
+        "title": "Languages"
+    },
+    {
+        "name": "Achievements",
+        "url": "achievements",
+        "icon": "fa-solid fa-trophy fa-fw me-3",
+        "title": "Achievements"
+    },
+    {
+        "name": "Portfolio",
+        "url": "portfolio",
+        "icon": "fa-solid fa-folder-tree fa-fw me-3",
+        "title": "Portfolio"
+    },
+    {
+        "name": "Experiences",
+        "url": "experiences",
+        "icon": "fa-solid fa-briefcase fa-fw me-3",
+        "title": "Experiences"
+    },
+    {
+        "name": "Academics",
+        "url": "academics",
+        "icon": "fa-solid fa-graduation-cap fa-fw me-3",
+        "title": "Academics"
+    }
+]

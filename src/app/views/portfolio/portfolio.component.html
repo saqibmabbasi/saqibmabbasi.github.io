@@ -1,0 +1,39 @@
+<h1>Portfolio</h1>
+
+<div *ngIf="(projects == null)">
+	<p><em>Loading...</em></p>
+</div>
+
+
+<div *ngIf="(projects != null)">
+	<div class="row row-cols-2 row-cols-md-2 g-4">
+        <div class="col" *ngFor="let project of projects">
+            <div class="card">
+
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-header">{{project.projectName}}</div>
+                <div class="card-body">
+                    <h5 class="card-title">{{project.natureOfProject}}</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+	</div>
+
+    <hr/>
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Project Name</th>
+				<th>NatureOfProject</th>
+			</tr>
+		</thead>
+		<tbody>
+            <tr *ngFor="let project of projects">
+                <td>{{project.projectName}}</td>
+                <td>{{project.natureOfProject}}</td>
+            </tr>
+		</tbody>
+	</table>
+</div>

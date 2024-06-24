@@ -1,0 +1,17 @@
+<!-- Right links -->
+<!-- Section: Social media -->
+<ul class="navbar-nav ms-auto d-flex flex-row">
+
+    <li class="nav-item" *ngFor="let socialNetwork of socialNetworkLinks">
+        <a mdbRipple
+                *ngIf="socialNetwork.url != ''"
+                class="btn btn-outline-light btn-floating m-1"
+                [externalLink]="socialNetwork.url"
+                [title]="socialNetwork.title"
+                role="button">
+            <i [class]="socialNetwork.icon"></i>
+        </a>
+    </li>
+
+</ul>
+<!-- Section: Social media -->

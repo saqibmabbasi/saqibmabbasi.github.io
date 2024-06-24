@@ -1,0 +1,26 @@
+<h1>Academics</h1>
+
+<div *ngIf="(academics == null)">
+  <p><em>Loading...</em></p>
+</div>
+
+<div class="container" *ngIf="(academics != null)">
+  <div class="row">
+    <!-- Section: Timeline -->
+    <section class="py-5">
+      <ul class="timeline-with-icons">
+        <li class="timeline-item mb-5" *ngFor="let academic of academics">
+          <span class="timeline-icon">
+              <!-- <i class="fas fa-rocket text-primary fa-sm fa-fw"></i> -->
+              <i class="fa-solid fa-school text-primary "></i>
+          </span>
+          <h5 class="fw-bold">{{academic.instituteName}}</h5>
+          <p class="text-muted mb-2 fw-bold">{{academic.year}}</p>
+          <p class="text-muted">{{academic.campusName}}</p>
+          <p class="text-muted">{{academic.fieldOfStudy}}</p>
+        </li>
+      </ul>
+    </section>
+    <!-- Section: Timeline -->
+  </div>
+</div>

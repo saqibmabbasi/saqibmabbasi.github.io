@@ -1,0 +1,52 @@
+<!-- Sidebar -->
+<nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-secondary">
+    <div class="position-sticky">
+      <div class="list-group list-group-flush mx-3 mt-4 bg-dark">
+        <div class="list-group-item list-group-item-action py-2 ripple"
+            *ngFor="let sideNav of sideNavigation">
+            <a [routerLink]="sideNav.url" [title]="sideNav.title">
+                <i [class]="sideNav.icon"></i>
+                <span>{{sideNav.name}}</span>
+            </a>
+        </div>
+
+
+
+
+        <!-- <a routerLink=""
+          class="list-group-item list-group-item-action py-2 ripple"
+          aria-current="true">
+          <i class="fas fa-house fa-fw me-3"></i><span>Home</span>
+        </a>
+        <a routerLink="about-me" class="list-group-item list-group-item-action py-2 ripple">
+          <i class="fa fa-user fa-fw me-3"></i><span>About Me</span>
+        </a>
+        <a routerLink="contact-me" class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fa-regular fa-address-card fa-fw me-3"></i><span>Contact Me</span></a
+        >
+        <a routerLink="skills" class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fa-solid fa-toolbox fa-fw me-3"></i><span>Skills</span></a
+        >
+        <a routerLink="languages" class="list-group-item list-group-item-action py-2 ripple">
+          <i class="fa-solid fa-comments fa-fw me-3"></i><span>Languages</span>
+        </a>
+        <a routerLink="major-achievements" class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fa-solid fa-trophy fa-fw me-3"></i><span>Major Achievements</span></a
+        >
+        <a routerLink="portfolio" class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fa-solid fa-folder-tree fa-fw me-3"></i><span>Portfolio</span></a
+        >
+        <a routerLink="experiences" class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fa-solid fa-briefcase fa-fw me-3"></i><span>Experiences</span></a
+        >
+        <a routerLink="academics" class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fa-solid fa-graduation-cap fa-fw me-3"></i><span>Academics</span></a
+        > -->
+
+        <!-- <a routerLink="cover-letter" class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fas fa-users fa-fw me-3"></i><span>Cover Letter</span></a
+        > -->
+      </div>
+    </div>
+  </nav>
+  <!-- Sidebar -->

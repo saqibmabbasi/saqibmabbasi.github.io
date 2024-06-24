@@ -1,0 +1,22 @@
+<h1>Languages</h1>
+
+<div *ngIf="(languages == null)">
+    <p><em>Loading...</em></p>
+</div>
+
+<div *ngIf="(languages != null)">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let language of languages">
+                <td>{{language.name}}</td>
+                <td>{{language.description}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

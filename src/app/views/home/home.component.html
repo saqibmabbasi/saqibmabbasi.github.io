@@ -1,0 +1,8 @@
+<div *ngIf="home == null">
+    <p><em>Loading...</em></p>
+</div>
+
+<div *ngIf="home != null">
+    <h1>{{home.name}}</h1>
+    <p class="lead" *ngFor="let title of home.titles">{{title.name}}</p>
+</div>

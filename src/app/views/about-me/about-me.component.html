@@ -1,0 +1,10 @@
+<h1>About Me</h1>
+
+<div *ngIf="aboutMe == null">
+    <p><em>Loading...</em></p>
+</div>
+
+<div *ngIf="aboutMe != null">
+    <p>{{aboutMe.name}}</p>
+    <p>{{aboutMe.objective}}</p>
+</div>

@@ -1,0 +1,11 @@
+<h1>Contact Details</h1>
+
+<div *ngIf="(contactMe == null)">
+	<p><em>Loading...</em></p>
+</div>
+
+<div *ngIf="(contactMe != null)">
+	<p>{{contactMe.address}}</p>
+	<p>{{contactMe.mobileNumber}}</p>
+	<p>{{contactMe.emailAddress}}</p>
+</div>

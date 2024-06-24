@@ -1,0 +1,68 @@
+<!--Main Navigation-->
+<header>
+
+    <app-side-navigation></app-side-navigation>
+
+    <!-- Navbar -->
+    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->a
+        <button data-mdb-button-init
+          class="navbar-toggler"
+          type="button"
+
+        >
+
+
+        <!-- data-mdb-collapse-init
+        data-mdb-target="#sidebarMenu"
+        aria-controls="sidebarMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation" -->
+
+          <!-- <i class="fas fa-bars"></i> -->
+          <i class="fab fa-facebook-f"></i>
+        </button>b
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+            height="25"
+            alt="MDB Logo"
+            loading="lazy"
+          />
+        </a>
+
+
+        <app-social-network></app-social-network>
+
+      </div>
+      <!-- Container wrapper -->
+
+    </nav>
+    <!-- Navbar -->
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main style="margin-top: 58px;">
+    <div class="container pt-4">
+      <router-outlet />
+    </div>
+  </main>
+  <!--Main layout-->
+
+
+
+  <!-- Footer -->
+  <footer class="bg-secondary text-center text-white fixed-bottom">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © {{ currentYear }} Copyright: Saqib M. Abbasi
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+

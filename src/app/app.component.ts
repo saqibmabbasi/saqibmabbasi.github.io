@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
+// import { SocialNetworkComponent } from './components/social-network/social-network.component';
+
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -11,10 +14,6 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'saqibmabbasi.github.io';
 
-  currentYear:number;
-
   constructor(){
-    let currentDate = new Date();
-    this.currentYear = currentDate.getFullYear();
   }
 }
