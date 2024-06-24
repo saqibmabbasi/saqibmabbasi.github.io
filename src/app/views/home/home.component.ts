@@ -3,11 +3,12 @@ import { NgFor, NgIf } from '@angular/common';
 import { DataService } from '../../services/data.service';
 
 import { Home, Title } from '../../models/all-models.model';
+import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-home',
     standalone: true,
-    imports: [NgFor, NgIf],
+    imports: [NgFor, NgIf, RouterLink],
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss'
 })
