@@ -1,10 +1,15 @@
-<a routerLink="/about-me">About Me</a>
+<div class="container-fluid text-white">
 
-<div *ngIf="home == null">
-    <p><em>Loading...</em></p>
-</div>
+    <div *ngIf="home == null">
+        <p><em>Loading...</em></p>
+    </div>
 
-<div *ngIf="home != null">
-    <h1>{{home.name}}</h1>
-    <p class="lead" *ngFor="let title of home.titles">{{title.name}}</p>
+    <div *ngIf="home != null">
+        <h1>{{home.name}}</h1>
+
+        <!-- <om-typewriter [words]="home.titles" ></om-typewriter> -->
+
+        <p class="lead" *ngFor="let title of home.titles">{{title}}</p>
+    </div>
+
 </div>

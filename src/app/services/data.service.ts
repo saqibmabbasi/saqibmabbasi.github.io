@@ -11,6 +11,7 @@ import {
     , ContactMe
     , Academic
     , SocialNetwork
+    , Branding
 } from '../models/all-models.model';
 import { Observable } from 'rxjs';
 
@@ -23,18 +24,17 @@ export class DataService {
 
     constructor(private http: HttpClient) { }
 
+    getBranding(): Observable<Branding> {
+        return this.http.get<Branding>(`${this.apiUrl}branding.json`);
+    }
 
     getSocialNetworkLinks(): Observable<SocialNetwork[]> {
         return this.http.get<SocialNetwork[]>(`${this.apiUrl}social-network.json`);
     }
 
-
-
     getSideNavigation(): Observable<SocialNetwork[]> {
         return this.http.get<SocialNetwork[]>(`${this.apiUrl}side-navigation.json`);
     }
-
-
 
     getHome(): Observable<Home> {
         return this.http.get<Home>(`${this.apiUrl}home.json`);

@@ -5,20 +5,19 @@
         [
             {
                 "name": "Oracle EBS R12 (HRMS)",
-                "level": "10"
+                "level": "50"
             },
             {
                 "name": "Oracle Forms, Reports & PL/SQL",
-                "level": "20"
+                "level": "60"
             },
             {
                 "name": "Oracle Database",
-                "level": "30"
+                "level": "70"
             },
             {
                 "name": "MS.NET (C#.NET)",
-                "type": "Technical",
-                "level": "40"
+                "level": "70"
             },
             {
                 "name": "MS SQL Server",
@@ -29,8 +28,8 @@
                 "level": "60"
             },
             {
-                "name": "Angular 7",
-                "level": "70"
+                "name": "Angular 17",
+                "level": "50"
             },
             {
                 "name": "Web API",

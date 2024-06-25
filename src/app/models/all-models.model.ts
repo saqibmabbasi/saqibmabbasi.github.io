@@ -1,4 +1,12 @@
 
+export interface Branding {
+    name: string,
+    name_route: string,
+    logo_path: string,
+    logo_route: string
+}
+
+
 export interface SideNavigation {
     name: string,
     url: string
@@ -15,12 +23,12 @@ export interface SocialNetwork {
 
 export interface Home {
     name?: string;
-    titles: Title[];
+    titles: string[];
 }
 
 
 export interface Title {
-    name?: string;
+    name: string;
 }
 
 
