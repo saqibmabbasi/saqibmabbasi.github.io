@@ -10,13 +10,44 @@
             <tr>
                 <th>Name</th>
                 <th>Description</th>
+                <th>Spoken</th>
+                <th>Written</th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let language of languages">
                 <td>{{language.name}}</td>
                 <td>{{language.description}}</td>
+                <td>{{language.spoken}}</td>
+                <td>{{language.written}}</td>
             </tr>
         </tbody>
     </table>
+</div>
+
+<div class="container-fluid" *ngIf="languages != null">
+    <div class="row">
+        <div class="row row-cols-3 row-cols-md-3 g-4">
+            <div class="col" *ngFor="let language of languages">
+
+                <div class="card" style="width: 18rem;" class="bg-success">
+                    <div class="card-body">
+                        <h5 class="card-title">{{language.name}}</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                        <p class="card-text">{{language.description}}</p>
+                        <p class="card-text">Spoken: {{language.spoken}}</p>
+                        <p class="card-text">Written: {{language.written}}</p>
+                    </div>
+                </div>
+
+
+                <!-- <div class="card">
+                    <div class="card-header"><h3>{{language.name}}</h3></div>
+                    <div class="card-body">
+                        <p>{{language.description}}</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
 </div>

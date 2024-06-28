@@ -51,8 +51,10 @@ export interface Skill {
 
 
 export interface Language {
-    name?: string;
+    name: string;
     description?: string;
+    written?: string;
+    spoken?: string;
 }
 
 

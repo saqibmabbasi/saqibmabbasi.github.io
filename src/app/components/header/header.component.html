@@ -8,11 +8,11 @@
 
         <app-my-logo [logoRoute]="branding.logo_route" [logoPath]="branding.logo_path" ></app-my-logo>
 
-        <h1 class="text-white">
+        <h3>
             <a [routerLink]="branding.name_route"
                 class="text-white"
                 *ngIf="currentURL == '/' || currentURL == '/home'">{{branding.name}}</a>
-        </h1>
+        </h3>
 
         <app-social-network></app-social-network>
 

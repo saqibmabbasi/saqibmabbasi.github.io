@@ -9,7 +9,11 @@
 
         <!-- <om-typewriter [words]="home.titles" ></om-typewriter> -->
 
-        <p class="lead" *ngFor="let title of home.titles">{{title}}</p>
+        <!-- <tp-writer [selector]="'twp'" [options]="options"></tp-writer> -->
+
+        <h1> I'm a {{ typedText$ | async }}</h1>
+
+        <!-- <p class="lead" *ngFor="let title of home.titles">{{title}}</p> -->
     </div>
 
 </div>
