@@ -1,15 +1,16 @@
-<!-- Sidebar -->
-<nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-dark">
-    <div class="position-sticky">
-      <div class="list-group list-group-flush mx-3 mt-4 bg-dark">
-        <div class="list-group-item list-group-item-action py-2 ripple"
-            *ngFor="let sideNav of sideNavigation">
-            <a [routerLink]="sideNav.url" [title]="sideNav.title">
-                <i [class]="sideNav.icon"></i>
-                <span>{{sideNav.name}}</span>
-            </a>
-        </div>
-      </div>
-    </div>
-</nav>
-<!-- Sidebar -->
+<div class="image-div">
+    <img src="assets/images/sma-profile.jpg" class="profile-image">
+</div>
+<div>
+    @for (sideNav of sideNavigation; track sideNav) {
+        <a mat-list-item [routerLink]="sideNav.url" [title]="sideNav.title"><i [class]="sideNav.icon"></i> {{sideNav.name}}</a>
+        <mat-divider></mat-divider>
+    }
+</div>
+
+
+
+<!-- <a [routerLink]="sideNav.url" [title]="sideNav.title">
+    <i [class]="sideNav.icon"></i>
+    <span>{{sideNav.name}}</span>
+</a> -->

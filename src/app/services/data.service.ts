@@ -11,7 +11,8 @@ import {
     , ContactMe
     , Academic
     , SocialNetwork
-    , Branding
+    , Branding,
+    Timeline
 } from '../models/all-models.model';
 import { Observable } from 'rxjs';
 
@@ -60,8 +61,8 @@ export class DataService {
         return this.http.get<Project[]>(`${this.apiUrl}portfolio.json`);
     }
 
-    getContactMe(): Observable<ContactMe> {
-        return this.http.get<ContactMe>(`${this.apiUrl}contact-me.json`);
+    getContactMe(): Observable<ContactMe[]> {
+        return this.http.get<ContactMe[]>(`${this.apiUrl}contact-me.json`);
     }
 
     getExperiences(): Observable<Experience[]> {
@@ -72,8 +73,8 @@ export class DataService {
         return this.http.get<Academic[]>(`${this.apiUrl}academics.json`);
     }
 
-    // getCoverLetter(): Observable<AllSkill[]> {
-    //   return this.http.get<AllSkill[]>(`${this.apiUrl}skills.json`);
-    // }
+    getTimeline(): Observable<Timeline[]> {
+        return this.http.get<Timeline[]>(`${this.apiUrl}timeline.json`);
+    }
 
 }

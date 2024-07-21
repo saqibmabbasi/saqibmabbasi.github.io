@@ -8,8 +8,8 @@ import { AcademicsComponent } from './views/academics/academics.component';
 import { ExperiencesComponent } from './views/experiences/experiences.component';
 import { AchievementsComponent } from './views/achievements/achievements.component';
 import { PortfolioComponent } from './views/portfolio/portfolio.component';
-import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
-import { BlankLayoutComponent } from './layouts/blank-layout/blank-layout.component';
+import { TimelineComponent } from './views/timeline/timeline.component';
+import { PageNotFoundComponent } from './views/page-not-found/page-not-found.component';
 
 export const routes: Routes = [
     {
@@ -19,51 +19,46 @@ export const routes: Routes = [
     },
     {
         path: 'home',
-        component: BlankLayoutComponent,
-        children: [
-            {
-                path: '',
-                component: HomeComponent
-            },
-        ]
+        component: HomeComponent
     },
     {
-        path: '',
-        component: MainLayoutComponent,
-        children: [
-            {
-                path: "about-me",
-
-                component: AboutMeComponent
-            },
-            {
-                path: "contact-me",
-                component: ContactMeComponent
-            },
-            {
-                path: "languages",
-                component: LanguagesComponent
-            },
-            {
-                path: "skills",
-                component: SkillsComponent
-            },
-            {
-                path: "academics",
-                component: AcademicsComponent
-            },
-            {
-                path: "experiences",
-                component: ExperiencesComponent
-            },
-            {
-                path: "achievements",
-                component: AchievementsComponent
-            },
-            {
-                path: "portfolio",
-                component: PortfolioComponent
-            },
-        ],
+        path: "about-me",
+        component: AboutMeComponent
     },
-];
+    {
+        path: "contact-me",
+        component: ContactMeComponent
+    },
+    {
+        path: "languages",
+        component: LanguagesComponent
+    },
+    {
+        path: "skills",
+        component: SkillsComponent
+    },
+    // {
+    //     path: "academics",
+    //     component: AcademicsComponent
+    // },
+    // {
+    //     path: "experiences",
+    //     component: ExperiencesComponent
+    // },
+    {
+        path: "achievements",
+        component: AchievementsComponent
+    },
+    {
+        path: "portfolio",
+        component: PortfolioComponent
+    },
+    {
+        path: "timeline",
+        component: TimelineComponent
+    },
+    {
+        path: "**",
+        component: PageNotFoundComponent
+    }
+]

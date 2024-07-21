@@ -1,0 +1,27 @@
+.sidenav-container {
+    /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+       causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+    flex: 1;
+}
+
+
+.sidenav {
+    width: 225px;
+}
+
+
+.image-div{
+    display: block;
+    text-align: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 75px;
+    background: black;
+    padding: 5px;
+    // width: 200px;
+    // height: 150px;
+}

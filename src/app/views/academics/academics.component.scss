@@ -1,0 +1,14 @@
+/* Add a left border to the <li> elements */
+.setBorder {
+    border-bottom: 1px solid black;
+    width: 22px;
+    height: 0px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+  }
+
+  /* Add the main branch line */
+  .borderMain {
+    border-left: 1px solid black;
+  }

@@ -1,26 +1,30 @@
-<!--Main Navigation-->
 <header>
+    <mat-toolbar color="primary" class="toolbar">
+        <button mat-icon-button (click)="snav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
 
-    <!-- Navbar -->
-    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
-      <!-- Container wrapper -->
-      <div class="container-fluid">
+        <app-my-logo [logoRoute]="branding.logo_route" [logoPath]="branding.logo_path"></app-my-logo>
 
-        <app-my-logo [logoRoute]="branding.logo_route" [logoPath]="branding.logo_path" ></app-my-logo>
+        <!-- <span class="spacer"></span> -->
 
-        <h3>
-            <a [routerLink]="branding.name_route"
-                class="text-white"
-                *ngIf="currentURL == '/' || currentURL == '/home'">{{branding.name}}</a>
-        </h3>
+        <h1 class="app-name brand-margin" [routerLink]="branding.name_route">
+            <a class="app-name-link">{{branding.name}}</a>
+        </h1>
 
-        <app-social-network></app-social-network>
+        <span class="spacer"></span>
 
-      </div>
-      <!-- Container wrapper -->
-
-    </nav>
-    <!-- Navbar -->
-
+        <div *ngFor="let socialNetwork of socialNetworkLinks">
+            <button mat-icon-button
+            [class]="socialNetwork.icon"
+            class="social-icons"
+            [externalLink]="socialNetwork.url"
+            [title]="socialNetwork.title"
+            *ngIf="socialNetwork.url != ''"
+            aria-label="icon-button with heart icon">
+        <mat-icon class="social-icons"
+                    fontIcon="socialNetwork.icon">socialNetwork.icon</mat-icon>
+    </button>
+    </div>
+    </mat-toolbar>
 </header>
-<!--Main Navigation-->

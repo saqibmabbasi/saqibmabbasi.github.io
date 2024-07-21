@@ -34,18 +34,20 @@ export interface Title {
 
 export interface AboutMe {
     name?: string;
-    objective?: string;
+    image: string;
+    objective: string;
+    details: string[];
 }
 
 
 
 export interface AllSkill {
-    type?: string;
+    type: string;
     skills: Skill[];
 }
 
 export interface Skill {
-    name?: string;
+    name: string;
     level: number;
 }
 
@@ -53,10 +55,14 @@ export interface Skill {
 export interface Language {
     name: string;
     description?: string;
-    written?: string;
-    spoken?: string;
+    level: Lang[]
 }
 
+
+export interface Lang{
+    medium: string;
+    proficiency: string;
+}
 
 
 export interface Project {
@@ -89,9 +95,16 @@ export interface Task {
 
 
 export interface ContactMe {
-    address?: string;
-    mobileNumber?: string;
-    emailAddress?: string;
+    type: string,
+    name: string,
+    value: string,
+    visible: boolean,
+    icon: string,
+    colspan: number,
+    rowspan: number
+    // address?: string;
+    // mobileNumber?: string;
+    // emailAddress?: string;
 }
 
 
@@ -107,9 +120,21 @@ export interface Academic {
 
 
 
+export interface Timeline {
+    type: string;
+    organization: string;
+    location: string;
+    domain: string;
+    field: string;
+    fromDate: string;
+    toDate: string;
 
-
-
-
+    status?: string;
+    date: Date;
+    icon: string;
+    color?: string;
+    image?: string;
+    scope: string[];
+}
 
 

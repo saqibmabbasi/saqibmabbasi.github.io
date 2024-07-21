@@ -1,10 +1,39 @@
-<h1>About Me</h1>
+<div>
+    <h1>{{aboutMe.name}}</h1>
+</div>
 
 <div *ngIf="aboutMe == null">
     <p><em>Loading...</em></p>
 </div>
 
 <div *ngIf="aboutMe != null">
-    <p>{{aboutMe.name}}</p>
-    <p>{{aboutMe.objective}}</p>
+
+    <mat-grid-list cols="3" rowHeight="100vh" class="about-me-grid">
+
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <img [src]="aboutMe.image" width="300px" height="300px" class="about-me-image" />
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="2" [rowspan]="1">
+
+            <div style="height: 100vh;">
+                <mat-card class="card">
+                    <!-- <mat-card-header>
+                        <mat-card-title-group>
+                            <mat-card-title>{{aboutMe.name}}</mat-card-title>
+                        </mat-card-title-group>
+                    </mat-card-header> -->
+                    <mat-card-content class="content">
+                        <h3 class="about-me-objective">{{aboutMe.objective}}</h3>
+                        <hr/>
+                        @for (dt of aboutMe.details; track dt){
+                            <p>{{dt}}</p>
+                        }
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </mat-grid-tile>
+
+    </mat-grid-list>
+
 </div>

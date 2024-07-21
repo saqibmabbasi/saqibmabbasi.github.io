@@ -4,11 +4,19 @@
         "skills":
         [
             {
-                "name": "Oracle EBS R12 (HRMS)",
+                "name": "Oracle EBS R12",
                 "level": "50"
             },
             {
-                "name": "Oracle Forms, Reports & PL/SQL",
+                "name": "Oracle Forms",
+                "level": "60"
+            },
+            {
+                "name": "Oracle Reports",
+                "level": "60"
+            },
+            {
+                "name": "Oracle PL/SQL",
                 "level": "60"
             },
             {

@@ -2,13 +2,30 @@
     {
         "name": "Urdu",
         "description": "Mother Tongue",
-        "written": "Fluent",
-        "spoken": "Fluent"
+        "level": [
+            {
+                "medium": "written",
+                "proficiency" : "Fluent"
+            },
+            {
+                "medium": "spoken",
+                "proficiency" : "Fluent"
+            }
+        ]
+
     },
     {
         "name": "English",
         "description": "Foreign Language",
-        "written": "Fluent",
-        "spoken": "Fluent"
+        "level": [
+            {
+                "medium": "written",
+                "proficiency" : "Fluent"
+            },
+            {
+                "medium": "spoken",
+                "proficiency" : "Fluent"
+            }
+        ]
     }
 ]

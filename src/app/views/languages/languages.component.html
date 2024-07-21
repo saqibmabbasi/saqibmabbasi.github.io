@@ -1,53 +1,83 @@
 <h1>Languages</h1>
 
-<div *ngIf="(languages == null)">
+<div *ngIf="languages == null">
     <p><em>Loading...</em></p>
 </div>
 
-<div *ngIf="(languages != null)">
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Spoken</th>
-                <th>Written</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let language of languages">
-                <td>{{language.name}}</td>
-                <td>{{language.description}}</td>
-                <td>{{language.spoken}}</td>
-                <td>{{language.written}}</td>
-            </tr>
-        </tbody>
-    </table>
+<div *ngIf="languages != null">
+
+    <mat-grid-list cols="4" class="language-main-grid">
+
+        @for (language of languages; track language) {
+        <mat-grid-tile [colspan]="1" [rowspan]="1" class="language-main-grid-tile">
+
+            <mat-card class="language-main-card">
+                <mat-card-header>
+                    <mat-card-title-group>
+                        <mat-card-title>{{language.name}}</mat-card-title>
+                        <mat-card-subtitle>{{language.description}}</mat-card-subtitle>
+                    </mat-card-title-group>
+                </mat-card-header>
+                <mat-card-content class="language-main-card-content">
+                    <mat-grid-list cols="2" class="language-sub-grid">
+
+                        @for (lvl of language.level; track lvl) {
+                        <mat-grid-tile [colspan]="1" [rowspan]="1" class="language-sub-grid-tile">
+
+                            <mat-card class="language-sub-card">
+                                <mat-card-header>
+                                    <mat-card-title-group>
+                                        <mat-card-title>{{lvl.medium}}</mat-card-title>
+                                    </mat-card-title-group>
+                                </mat-card-header>
+                                <mat-card-content class="language-sub-card-content">
+                                    <p>{{lvl.proficiency}}</p>
+                                </mat-card-content>
+                            </mat-card>
+
+                        </mat-grid-tile>
+                        }
+                    </mat-grid-list>
+                </mat-card-content>
+            </mat-card>
+        </mat-grid-tile>
+        }
+    </mat-grid-list>
 </div>
 
-<div class="container-fluid" *ngIf="languages != null">
-    <div class="row">
-        <div class="row row-cols-3 row-cols-md-3 g-4">
-            <div class="col" *ngFor="let language of languages">
-
-                <div class="card" style="width: 18rem;" class="bg-success">
-                    <div class="card-body">
-                        <h5 class="card-title">{{language.name}}</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                        <p class="card-text">{{language.description}}</p>
-                        <p class="card-text">Spoken: {{language.spoken}}</p>
-                        <p class="card-text">Written: {{language.written}}</p>
-                    </div>
-                </div>
 
 
-                <!-- <div class="card">
-                    <div class="card-header"><h3>{{language.name}}</h3></div>
-                    <div class="card-body">
-                        <p>{{language.description}}</p>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </div>
-</div>
+
+
+
+
+<!--
+
+
+<div *ngIf="languages != null" class="container-fluid">
+
+    <mat-grid-list cols="2" rowHeight="100px" class="language-grid">
+        @for (language of languages; track language) {
+        <mat-grid-tile [colspan]="1" [rowspan]="1" class="language-grid-tile">
+
+            <mat-card class="language-card">
+                <mat-card-header>
+                    <mat-card-title-group>
+                        <mat-card-title>{{language.name}}</mat-card-title>
+                        <mat-card-subtitle>{{language.description}}</mat-card-subtitle>
+                    </mat-card-title-group>
+                </mat-card-header>
+                <mat-card-content class="content">
+
+                    <span class="card-text">Spoken: {{language.spoken}}</span>
+
+                    <span class="card-text">Written: {{language.written}}</span>
+
+                </mat-card-content>
+            </mat-card>
+
+        </mat-grid-tile>
+        }
+    </mat-grid-list>
+
+</div> -->

@@ -1,6 +1,6 @@
 {
-    "name": "About Me",
-    "name_route": "/about-me",
+    "name": "Saqib Mustafa Abbasi",
+    "name_route": "/home",
     "logo_path": "assets/images/SMA_Logo.jpg",
     "logo_route": "/home"
 }

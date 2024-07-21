@@ -1,10 +1,5 @@
 [
-    {
-        "name": "Home",
-        "url": "home",
-        "icon": "fas fa-house fa-fw me-3",
-        "title": "Home"
-    },
+
     {
         "name": "About Me",
         "url": "about-me",
@@ -42,15 +37,9 @@
         "title": "Portfolio"
     },
     {
-        "name": "Experiences",
-        "url": "experiences",
-        "icon": "fa-solid fa-briefcase fa-fw me-3",
-        "title": "Experiences"
-    },
-    {
-        "name": "Academics",
-        "url": "academics",
-        "icon": "fa-solid fa-graduation-cap fa-fw me-3",
-        "title": "Academics"
+        "name": "Timeline",
+        "url": "timeline",
+        "icon": "fa-solid fa-timeline fa-fw me-3",
+        "title": "Timeline"
     }
 ]

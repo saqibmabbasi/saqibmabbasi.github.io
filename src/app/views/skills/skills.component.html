@@ -1,30 +1,39 @@
-
 <div *ngIf="allSkills == null">
-  <p><em>Loading...</em></p>
+    <p><em>Loading...</em></p>
 </div>
 
 <div *ngIf="allSkills != null" class="container-fluid">
-  <div class="row" *ngFor="let allSkill of allSkills">
-    <h3>{{allSkill.type}}</h3>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="row row-cols-3 row-cols-md-3 g-4">
-          <div class="col" *ngFor="let skill of allSkill.skills">
-            <div class="card">
-              <div class="card-header">{{skill.name}} ----- {{skill.level}}%</div>
-              <div class="card-body">
-                <div *ngIf="skill.level >= 50" class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar progress-bar-striped bg-success" [style.width]="skill.level">{{skill.level}}%</div>
-                </div>
-                <div *ngIf="skill.level < 50" class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar progress-bar-striped bg-primary" [style.width]="skill.level">{{skill.level}}%</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <mat-card class="card" *ngFor="let allSkill of allSkills">
+        <mat-card-header>
+            <mat-card-title-group>
+                <mat-card-title>{{allSkill.type}}</mat-card-title>
+            </mat-card-title-group>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-grid-list cols="4" rowHeight="100px">
+                @for (skill of allSkill.skills; track skill) {
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+
+                    <mat-card class="skill-card">
+                        <mat-card-header>
+                            <mat-card-title-group>
+                                <mat-card-title>{{skill.name}}</mat-card-title>
+                                <mat-card-subtitle>{{skill.level}}%</mat-card-subtitle>
+                            </mat-card-title-group>
+                        </mat-card-header>
+                        <mat-card-content class="content">
+                            <mat-progress-bar mode="determinate"
+                                    [value]="skill.level"
+                                    class="skill-progress"
+                                    >
+                                </mat-progress-bar>
+                        </mat-card-content>
+                    </mat-card>
+
+                </mat-grid-tile>
+                }
+            </mat-grid-list>
+        </mat-card-content>
+    </mat-card>
 </div>
