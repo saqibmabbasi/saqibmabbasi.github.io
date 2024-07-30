@@ -8,7 +8,7 @@
         "watch": "ng build --watch --configuration development",
         "test": "ng test",
         "prod-build": "ng build --configuration=production --base-href=https://saqibmabbasi.github.io/",
-        "copy": "cp -r -f dist/saqibmabbasi.github.io/browser/* docs/",
+        "copy": "cp -R -Force dist/saqibmabbasi.github.io/browser/* docs/",
         "deploy": "npm run prod-build && npm run copy"
     },
     "private": true,
