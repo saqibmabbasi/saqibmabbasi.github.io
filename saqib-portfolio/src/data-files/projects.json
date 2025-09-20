@@ -1,0 +1,4 @@
+[
+  { "id": 1, "name": "Portfolio", "tech": "React" },
+  { "id": 2, "name": "ShopApp", "tech": "SolidJS" }
+]
