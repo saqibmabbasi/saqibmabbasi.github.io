@@ -35,7 +35,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist   # Change if your build folder is "build" or something else
+          path: ./saqib-portfolio/dist   # Change if your build folder is "build" or something else
 
   deploy:
     environment:
