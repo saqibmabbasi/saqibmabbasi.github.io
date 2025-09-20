@@ -1,0 +1,29 @@
+[
+    {
+        "type": "postal",
+        "name": "Postal Address",
+        "value": "House # B-210, Gulshan-e-Iqbal, Block 13/D-1, Karachi-75300 Pakistan",
+        "icon": "fa-solid fa-location-dot",
+        "visible": false,
+        "colspan": 2,
+        "rowspan": 1
+    },
+    {
+        "type": "mobile",
+        "name": "Mobile Number",
+        "value": "+92-321-2424740",
+        "icon": "fa-solid fa-mobile-screen",
+        "visible": true,
+        "colspan": 1,
+        "rowspan": 1
+    },
+    {
+        "type": "email",
+        "name": "Email Address",
+        "value": "SaqibMAbbasi@Gmail.com",
+        "icon": "fa-solid fa-at",
+        "visible": true,
+        "colspan": 1,
+        "rowspan": 1
+    }
+]

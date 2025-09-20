@@ -1,0 +1,50 @@
+[
+    {
+        "name": "LinkedIn",
+        "title": "LinkedIn",
+        "icon": "fab fa-linkedin-in",
+        "url": "https://www.linkedin.com/in/saqibmabbasi"
+    },
+    {
+        "name": "Github",
+        "title": "Github",
+        "icon": "fab fa-github",
+        "url": "https://github.com/saqibmabbasi"
+    },
+    {
+        "name": "GitLab",
+        "title": "GitLab",
+        "icon": "fa-brands fa-gitlab",
+        "url": "https://gitlab.com/saqibmabbasi"
+    },
+    {
+        "name": "Google",
+        "title": "Google",
+        "icon": "fab fa-google",
+        "url": ""
+    },
+    {
+        "name": "Wordpress",
+        "title": "My Blog",
+        "icon": "fa-brands fa-wordpress",
+        "url": "https://saqibmabbasi.wordpress.com/"
+    },
+    {
+        "name": "Facebook",
+        "title": "Facebook",
+        "icon": "fab fa-facebook-f",
+        "url": "https://www.facebook.com/saqib.m.abbasi.7/"
+    },
+    {
+        "name": "Twitter",
+        "title": "Twitter",
+        "icon": "fab fa-twitter",
+        "url": ""
+    },
+    {
+        "name": "Instagram",
+        "title": "Instagram",
+        "icon": "fab fa-instagram",
+        "url": ""
+    }
+]

@@ -1,0 +1,39 @@
+[
+    {
+        "instituteName": "M.A. Jinnah University",
+        "campusName": "Karachi Campus",
+        "degree": "Masters of Science [MS]",
+        "fieldOfStudy": "Computer Science",
+        "year": "2007"
+    },
+    {
+        "instituteName": "M.A. Jinnah University",
+        "campusName": "Karachi Campus",
+        "degree": "Masters of Science [MCS]",
+        "fieldOfStudy": "Computer Science",
+        "year": "2006"
+    },
+    {
+        "instituteName": "BCCI FAST ICS",
+        "campusName": "Karachi Campus",
+        "degree": "Bachelors of Science [BCS]",
+        "fieldOfStudy": "Computer Science",
+        "year": "1999"
+    },
+    {
+        "instituteName": "P.A.F. Degree College",
+        "campusName": "Base Faisal, Karachi",
+        "board": "Federal Board",
+        "degree": "Intermediate",
+        "fieldOfStudy": "Pre-Engineering",
+        "year": "1996"
+    },
+    {
+        "instituteName": "P.A.F. Degree College",
+        "campusName": "Base Faisal, Karachi",
+        "board": "Federal Board",
+        "degree": "Matriculation",
+        "fieldOfStudy": "Science",
+        "year": "1994"
+    }
+]

@@ -11,6 +11,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@solidjs/router": "^0.15.3",
     "solid-js": "^1.9.9"
   },
   "devDependencies": {

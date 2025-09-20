@@ -1,0 +1,31 @@
+[
+    {
+        "name": "Urdu",
+        "description": "Mother Tongue",
+        "level": [
+            {
+                "medium": "written",
+                "proficiency" : "Fluent"
+            },
+            {
+                "medium": "spoken",
+                "proficiency" : "Fluent"
+            }
+        ]
+
+    },
+    {
+        "name": "English",
+        "description": "Foreign Language",
+        "level": [
+            {
+                "medium": "written",
+                "proficiency" : "Fluent"
+            },
+            {
+                "medium": "spoken",
+                "proficiency" : "Fluent"
+            }
+        ]
+    }
+]

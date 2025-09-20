@@ -2,13 +2,6 @@
 import { render } from 'solid-js/web'
 import { Router, Route, A } from "@solidjs/router";
 import './index.css'
-// import App from './App.tsx'
-
-// const root = document.getElementById('root')
-
-// render(() => <App />, root!)
-
-// import App from "./App";
 
 import AboutMe from "./pages/AboutMe"
 import Academics from "./pages/Academics";
@@ -36,7 +29,7 @@ const App = (props) => (
         | <A href='/skills'>Skills</A>
         | <A href='/social-links'>SocialLinks</A>
     </nav>
-    <h1>Site Title</h1>
+    <h1>Saqib Mustafa Abbasi</h1>
     {props.children}
   </>
 );
