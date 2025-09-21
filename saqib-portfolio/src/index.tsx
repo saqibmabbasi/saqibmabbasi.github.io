@@ -22,7 +22,7 @@ const App = (props) => (
         | <A href="/about-me">About Me</A> 
         | <A href="/achievements">Achievements</A> 
         | <A href='/academics'>Academics</A>
-        | <A href='/experience'>Experience</A>
+        {/*| <A href='/experience'>Experience</A>*/}
         | <A href='/experiences'>Experiences</A>
         | <A href='/project'>Project</A>
         | <A href='/projects'>Projects</A>
