@@ -11,7 +11,13 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.0.1",
+    "@fortawesome/fontawesome-svg-core": "^7.0.1",
+    "@fortawesome/free-brands-svg-icons": "^7.0.1",
+    "@fortawesome/free-regular-svg-icons": "^7.0.1",
+    "@fortawesome/free-solid-svg-icons": "^7.0.1",
     "@solidjs/router": "^0.15.3",
+    "bootstrap": "^5.3.8",
     "solid-js": "^1.9.9"
   },
   "devDependencies": {

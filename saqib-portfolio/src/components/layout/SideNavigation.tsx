@@ -2,18 +2,14 @@ import { A } from "@solidjs/router";
 
 export default function SideNavigation() {
     return <>
-        <h2>Side Navigation</h2>
-        <nav style={{ display: "flex", gap: "1rem" }}>
-            <A href="/public">Home</A>
-            | <A href="/about-me">About Me</A>
-            | <A href="/achievements">Achievements</A>
-            | <A href='/academics'>Academics</A>
-            {/*| <A href='/experience'>Experience</A>*/}
-            | <A href='/experiences'>Experiences</A>
-            | <A href='/project'>Project</A>
-            | <A href='/projects'>Projects</A>
-            | <A href='/skills'>Skills</A>
-            | <A href='/social-links'>SocialLinks</A>
+        <nav className="nav flex-column">
+            <A className="nav-link" href="/">Home</A>
+            <A className="nav-link" href="/about-me">About Me</A>
+            <A className="nav-link" href="/achievements">Achievements</A>
+            <A className="nav-link" href='/academics'>Academics</A>
+            <A className="nav-link" href='/experiences'>Experiences</A>
+            <A className="nav-link" href='/projects'>Projects</A>
+            <A className="nav-link" href='/skills'>Skills</A>
         </nav>
-        </>
+    </>
 }

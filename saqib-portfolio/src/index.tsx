@@ -1,7 +1,9 @@
 /* @refresh reload */
 import { render } from 'solid-js/web'
-import { Router, Route } from "@solidjs/router";
+import { Router, Route, Navigate } from "@solidjs/router";
 import './index.css'
+
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import AboutMe from "./pages/AboutMe"
 import Academics from "./pages/Academics";
@@ -24,7 +26,6 @@ const App = (props) => (
         <Header></Header>
         <SideNavigation></SideNavigation>
         <div>
-            <h1>Saqib Mustafa Abbasi</h1>
             {props.children}
         </div>
         <Footer></Footer>
@@ -44,6 +45,9 @@ render(
         <Route path="/projects" component={Projects} />
         <Route path="/skills" component={Skills} />
         <Route path="/social-links" component={SocialLinks} />
+
+        <Route path="/public" element={<Navigate href="/" />} />
+
         <Route path="*paramName" component={NotFound} />
     </Router>
   ),
