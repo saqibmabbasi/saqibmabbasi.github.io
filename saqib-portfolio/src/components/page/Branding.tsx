@@ -1,4 +1,4 @@
-import branding from '../data-files/branding.json';
+import branding from '../../data-files/branding.json';
 
 export default function Branding() {
     return <>
