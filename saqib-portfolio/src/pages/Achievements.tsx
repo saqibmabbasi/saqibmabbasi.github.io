@@ -1,3 +1,12 @@
+import achievements from "../data-files/achievements";
+
+
 export default function Achievements(){
-    return <h2>Key Achievements Page</h2>
+    return (
+        <ul>
+            {achievements.map(p => (
+                <li>{p.title} ({p.beneficiary})</li>
+            ))}
+        </ul>
+    );
 }
