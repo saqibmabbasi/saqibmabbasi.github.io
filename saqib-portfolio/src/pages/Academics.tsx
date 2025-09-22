@@ -1,3 +1,11 @@
+import academics from "../data-files/academics";
+
 export default function Academics(){
-    return <h2>Academics Page</h2>
+    return (
+        <ul>
+            {academics.map(p => (
+                <li>{p.instituteName} ({p.campusName} - {p.degree} - {p.fieldOfStudy} - {p.year})</li>
+            ))}
+        </ul>
+    );
 }
