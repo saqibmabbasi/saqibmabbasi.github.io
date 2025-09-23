@@ -1,3 +1,17 @@
+import skills from "../data-files/skills";
+
 export default function Skills(){
-    return <h2>Skills Page will have a list of Skill component</h2>
+    return (
+        <ul>
+            {skills.map(p => (
+                <li>{p.type} <br/>
+                    <ul>
+                        {p.skills.map(s => (
+                            <li>{s.name} ({s.level})</li>
+                        ))};
+                    </ul>
+                </li>
+            ))}
+        </ul>
+    );
 }
