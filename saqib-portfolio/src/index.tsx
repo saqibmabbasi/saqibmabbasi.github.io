@@ -3,8 +3,6 @@ import './index.css';
 import { render } from 'solid-js/web'
 import { Router, Route, Navigate } from "@solidjs/router";
 
-// import "bootstrap/dist/css/bootstrap.min.css";
-
 import AboutMe from "./pages/AboutMe"
 import Academics from "./pages/Academics";
 import Achievements from "./pages/Achievements"
@@ -23,25 +21,24 @@ import Footer from "./components/layout/Footer.tsx";
 
 const App = (props) => (
     <>
-      <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      {/* <div className="min-h-screen flex items-center justify-center bg-gray-100">
         <h1 className="text-4xl font-bold text-blue-600">
           Tailwind is working 🎉
         </h1>
         <Header></Header>
-      <SocialLinks></SocialLinks>
-      <SideNavigation></SideNavigation>
-      <div>
+        <SocialLinks></SocialLinks>
+        <SideNavigation></SideNavigation>
+        <div>
           {props.children}
-      </div>
-      <Footer></Footer>
-    </div>
-
-      
+        </div>
+        <Footer></Footer>
+      </div> */}
     </>
 );
 
 render(
   () => (
+    <DashboardLayout />,
     <Router root={App}>
         <Route path="/" component={Home} />
         <Route path="/about-me" component={AboutMe} />
@@ -60,4 +57,7 @@ render(
     </Router>
   ),
   document.getElementById("root")
+ 
 );
+
+//  render(() => <DashboardLayout />, document.getElementById("root") as HTMLElement);
