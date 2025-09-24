@@ -1,3 +1,12 @@
+import aboutme from '../data-files/about-me';
+
 export default function AboutMe(){
-    return <h2>About Me Page</h2>
+    return (
+        <>
+            <p>{aboutme.name}</p>
+            <p>{aboutme.image}</p>
+            <p>{aboutme.objective}</p>
+            <p>{aboutme.details}</p>
+        </>
+    );
 }

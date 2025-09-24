@@ -1,10 +1,10 @@
 {
     "name": "Saqib Mustafa Abbasi",
     "titles": [
-        "Business Analyst",
-        "Software Engineer",
-        "Software Architect",
-        ".NET Developer",
-        "Oracle Developer"
+        {"title":"Business Analyst"},
+        {"title":"Software Engineer"},
+        {"title":"Software Architect"},
+        {"title":".NET Developer"},
+        {"title":"Oracle Developer"}
     ]
 }
