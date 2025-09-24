@@ -8,7 +8,7 @@ export default function Skills(){
                     <ul>
                         {p.skills.map(s => (
                             <li>{s.name} ({s.level})</li>
-                        ))};
+                        ))}
                     </ul>
                 </li>
             ))}

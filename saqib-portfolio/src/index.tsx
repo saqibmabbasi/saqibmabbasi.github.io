@@ -24,6 +24,7 @@ import Footer from "./components/layout/Footer.tsx";
 const App = (props) => (
     <>
         <Header></Header>
+        <SocialLinks></SocialLinks>
         <SideNavigation></SideNavigation>
         <div>
             {props.children}
