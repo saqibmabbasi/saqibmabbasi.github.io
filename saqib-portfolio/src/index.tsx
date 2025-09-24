@@ -110,10 +110,7 @@ const App = (props) => (
         <Header></Header>
         <SocialLinks></SocialLinks>
         <SideNavigation></SideNavigation>
-        <div>
-          {props.children}
-      </div>
-      <Footer></Footer>
+        
     </div> */}
 
       

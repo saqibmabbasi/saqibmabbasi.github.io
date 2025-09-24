@@ -2,14 +2,21 @@ import { A } from "@solidjs/router";
 
 export default function SideNavigation() {
     return <>
-        <nav className="nav flex-column">
-            <A className="nav-link" href="/">Home</A>
-            <A className="nav-link" href="/about-me">About Me</A>
-            <A className="nav-link" href="/achievements">Achievements</A>
-            <A className="nav-link" href='/academics'>Academics</A>
-            <A className="nav-link" href='/experiences'>Experiences</A>
-            <A className="nav-link" href='/projects'>Projects</A>
-            <A className="nav-link" href='/skills'>Skills</A>
+        <nav class="p-4 space-y-2">
+            <A class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" 
+                href="/">Home</A>
+            <A class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" 
+                href="/about-me">About Me</A>
+            <A class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" 
+                href="/achievements">Achievements</A>
+            <A class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" 
+                href='/academics'>Academics</A>
+            <A class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" 
+                href='/experiences'>Experiences</A>
+            <A class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" 
+                href='/projects'>Projects</A>
+            <A class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" 
+                href='/skills'>Skills</A>
         </nav>
     </>
 }
