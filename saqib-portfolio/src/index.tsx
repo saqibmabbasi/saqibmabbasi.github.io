@@ -28,7 +28,7 @@ const App = (props) => (
       {/* Sidebar */}
       <aside
         class={`${
-          sidebarOpen() ? "w-64" : "w-20"
+          sidebarOpen() ? "w-80" : "w-20"
         } bg-white dark:bg-gray-800 shadow-md transition-all duration-300`}
       >
         <div class="flex items-center justify-between p-4 border-b dark:border-gray-700">
@@ -42,7 +42,8 @@ const App = (props) => (
             ☰
           </button>
         </div>
-        <nav class="p-4 space-y-2">
+        <SideNavigation></SideNavigation>
+        {/* <nav class="p-4 space-y-2">
           <a
             href="#"
             class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700"
@@ -61,25 +62,19 @@ const App = (props) => (
           >
             Settings
           </a>
-        </nav>
+        </nav> */}
       </aside>
 
       {/* Main Content */}
       <main class="flex-1 flex flex-col">
         {/* Header */}
-        <header class="flex justify-between items-center p-4 bg-white dark:bg-gray-800 shadow-sm">
-          <h2 class="text-xl font-semibold">Dashboard</h2>
-          <button
-            class="px-3 py-1 rounded bg-blue-600 text-white hover:bg-blue-700"
-            onClick={() =>
-              document.documentElement.classList.toggle("dark")
-            }
-          >
-            Toggle Theme
-          </button>
-        </header>
+        <Header></Header>
 
         {/* Content */}
+        <div>
+          {props.children}
+        </div>
+
         <section class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Card */}
           <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
@@ -97,6 +92,8 @@ const App = (props) => (
             <p class="text-2xl font-semibold">320</p>
           </div>
         </section>
+
+        <Footer></Footer>
       </main>
     </div>
   );
