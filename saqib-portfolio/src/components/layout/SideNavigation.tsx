@@ -20,3 +20,25 @@ export default function SideNavigation() {
         </nav>
     </>
 }
+
+
+{/* <nav class="p-4 space-y-2">
+          <a
+            href="#"
+            class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700"
+          >
+            Dashboard
+          </a>
+          <a
+            href="#"
+            class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700"
+          >
+            Users
+          </a>
+          <a
+            href="#"
+            class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700"
+          >
+            Settings
+          </a>
+        </nav> */}

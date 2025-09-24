@@ -43,26 +43,6 @@ const App = (props) => (
           </button>
         </div>
         <SideNavigation></SideNavigation>
-        {/* <nav class="p-4 space-y-2">
-          <a
-            href="#"
-            class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700"
-          >
-            Dashboard
-          </a>
-          <a
-            href="#"
-            class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700"
-          >
-            Users
-          </a>
-          <a
-            href="#"
-            class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700"
-          >
-            Settings
-          </a>
-        </nav> */}
       </aside>
 
       {/* Main Content */}
@@ -71,25 +51,9 @@ const App = (props) => (
         <Header></Header>
 
         {/* Content */}
-        <div>
-          {props.children}
-        </div>
-
         <section class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Card */}
-          <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
-            <h3 class="text-lg font-bold mb-2">Users</h3>
-            <p class="text-2xl font-semibold">1,240</p>
-          </div>
-
-          <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
-            <h3 class="text-lg font-bold mb-2">Revenue</h3>
-            <p class="text-2xl font-semibold">$12,400</p>
-          </div>
-
-          <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
-            <h3 class="text-lg font-bold mb-2">Orders</h3>
-            <p class="text-2xl font-semibold">320</p>
+          <div>
+            {props.children}
           </div>
         </section>
 
