@@ -28,7 +28,7 @@ const App = (props) => (
       {/* Sidebar */}
       <aside
         class={`${
-          sidebarOpen() ? "w-80" : "w-20"
+          sidebarOpen() ? "w-120" : "w-20"
         } bg-white dark:bg-gray-800 shadow-md transition-all duration-300`}
       >
         <div class="flex items-center justify-between p-4 border-b dark:border-gray-700">
@@ -101,7 +101,7 @@ render(
         <Route path="*paramName" component={NotFound} />
     </Router>
   ),
-  <h1 class="text-4xl font-bold text-blue-600">Hello Tailwind!</h1>, 
+  // <h1 class="text-4xl font-bold text-blue-600">Hello Tailwind!</h1>, 
   document.getElementById("root")
  
 );
