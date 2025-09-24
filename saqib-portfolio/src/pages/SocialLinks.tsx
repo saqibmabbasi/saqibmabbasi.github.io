@@ -1,14 +1,20 @@
 import { A } from "@solidjs/router";
 
-import sociallinks from '../data-files/social-network';
+import sociallinks from '../data-files/social-network.json';
 
 export default function SocialLinks(){
     return (
         <>
-            <A href={sociallinks.url} title={sociallinks.title}>
-                <span class={sociallinks.icon}></span>
-                 {sociallinks.name}
-            </A>
+            <ul>
+                {sociallinks.map(p => (
+                <li>
+                    <A href={p.url} title={p.title}>
+                        <span class={p.icon}></span>
+                        {p.name}
+                    </A>
+                </li>
+            ))}
+            </ul>
         </>
     )
 }
