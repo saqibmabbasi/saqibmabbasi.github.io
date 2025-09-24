@@ -1,9 +1,9 @@
 /* @refresh reload */
+import './index.css';
 import { render } from 'solid-js/web'
 import { Router, Route, Navigate } from "@solidjs/router";
-import './index.css'
 
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 import AboutMe from "./pages/AboutMe"
 import Academics from "./pages/Academics";
