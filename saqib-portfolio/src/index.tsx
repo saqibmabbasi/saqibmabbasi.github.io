@@ -1,5 +1,6 @@
-/* @refresh reload */
+// import './index.css';
 import './index.css';
+/* @refresh reload */
 import { render } from 'solid-js/web'
 import { Router, Route, Navigate } from "@solidjs/router";
 import { createSignal } from "solid-js";
