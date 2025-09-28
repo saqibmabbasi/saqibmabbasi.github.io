@@ -17,9 +17,10 @@ import Skills from './pages/Skills';
 import SocialLinks from './pages/SocialLinks';
 import NotFound from "./pages/NotFound";
 
-import Header from "./components/layout/Header.tsx";
+// import Header from "./components/layout/Header.tsx";
 import SideNavigation from "./components/layout/SideNavigation.tsx";
 import Footer from "./components/layout/Footer.tsx";
+import Branding from "./components/page/Branding.tsx";
 
 const [sidebarOpen, setSidebarOpen] = createSignal(true);
 
@@ -29,7 +30,7 @@ const App = (props) => (
       {/* Sidebar */}
       <aside
         class={`${
-          sidebarOpen() ? "w-120" : "w-20"
+          sidebarOpen() ? "w-64" : "w-20"
         } bg-white dark:bg-gray-800 shadow-md transition-all duration-300`}
       >
         <div class="flex items-center justify-between p-4 border-b dark:border-gray-700">
@@ -43,50 +44,58 @@ const App = (props) => (
             ☰
           </button>
         </div>
+          <div class={`${sidebarOpen() ? "block" : "hidden"}`}>
         <SideNavigation></SideNavigation>
+        </div>
       </aside>
 
       {/* Main Content */}
-      <main class="flex-1 flex flex-col">
-        {/* Header */}
-        <Header></Header>
+        <main class="flex-1 flex flex-col">
+            {/* Header */}
+            <header class="flex justify-between items-center p-4 bg-white dark:bg-gray-800 shadow-sm">
+                <h2 class="text-xl font-semibold"><Branding></Branding></h2>
 
-        {/* Content */}
-        <section class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div>
-            {props.children}
-          </div>
-        </section>
+                <button
+                    class="px-3 py-1 rounded bg-blue-600 text-white hover:bg-blue-700"
+                    onClick={() =>
+                        document.documentElement.classList.toggle("dark")
+                    }
+                >
+                    Toggle Theme
+                </button>
+            </header>
 
-        <Footer></Footer>
-      </main>
+            {/*<Header></Header>*/}
+
+
+
+            {/* Content */}
+            <section class="flex-1 flex flex-col">
+                <div>
+                    {props.children}
+                </div>
+            </section>
+
+            <Footer></Footer>
+        </main>
     </div>
-  );
 
-
-
-
-
-
-      {/* <div className="min-h-screen flex items-center justify-center bg-gray-100">
+        {/* <div className="min-h-screen flex items-center justify-center bg-gray-100">
         <h1 className="text-4xl font-bold text-blue-600">
           Tailwind is working 🎉
         </h1>
         <Header></Header>
         <SocialLinks></SocialLinks>
         <SideNavigation></SideNavigation>
-        
-    </div> */}
-
-      
+        </div> */}
     </>
 );
 
 render(
-  () => (
-    // <DashboardLayout />,
-    <Router root={App}>
-        <Route path="/" component={Home} />
+    () => (
+        // <DashboardLayout />,
+        <Router root={App}>
+            <Route path="/" component={Home} />
         <Route path="/about-me" component={AboutMe} />
         <Route path="/achievements" component={Achievements} />
         <Route path="/academics" component={Academics} />
