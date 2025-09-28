@@ -23,7 +23,7 @@ import SideNavigationBar from "./components/layout/SideNavigationBar.tsx";
 import Footer from "./components/layout/Footer.tsx";
 import Branding from "./components/page/Branding.tsx";
 
-import Icon from "../components/layout/Icon";
+import Icon from "./components/layout/Icon";
 
 const [sidebarOpen, setSidebarOpen] = createSignal(true);
 
