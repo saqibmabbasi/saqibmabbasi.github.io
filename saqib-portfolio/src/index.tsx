@@ -23,9 +23,14 @@ import SideNavigationBar from "./components/layout/SideNavigationBar.tsx";
 import Footer from "./components/layout/Footer.tsx";
 import Branding from "./components/page/Branding.tsx";
 
+import { icon } from "@fortawesome/fontawesome-svg-core";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 
+
 const [sidebarOpen, setSidebarOpen] = createSignal(true);
+
+const userIcon = icon(faUser).html[0];
+
 
 const App = (props) => (
   <>
@@ -37,7 +42,10 @@ const App = (props) => (
       >
         <div class="flex items-center justify-between p-4 border-b dark:border-gray-700">
           <h1 class={`${sidebarOpen() ? "block" : "hidden"} text-xl font-bold`}>
-            <span innerHTML={faUser.svg[0][1]} />
+            <div class="flex items-center gap-2 text-blue-600">
+      <span innerHTML={userIcon} /> {/* Injects SVG */}
+      <span>User Profile</span>
+    </div>
           </h1>
           <button
             class="text-gray-500 dark:text-gray-300"
