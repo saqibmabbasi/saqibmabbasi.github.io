@@ -3,7 +3,7 @@ import { JSX } from "solid-js";
 import { icon, IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 // Import the icons you need
-import { faUser, faHome, faCog } from "@fortawesome/free-solid-svg-icons";
+import { faUser, faHome, faCog, faMoon, faLandmark, faSchool, faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 // Map icon names to Font Awesome definitions
@@ -11,6 +11,10 @@ const iconMap: Record<string, IconDefinition> = {
   user: faUser,
   home: faHome,
   settings: faCog,
+  moon: faMoon,
+  landmark: faLandmark,
+  briefcase: faBriefcase,
+  school: faSchool,
   github: faGithub,
 };
 

@@ -14,7 +14,7 @@ import Home from './pages/Home';
 import Project from './components/page/Project.tsx';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
-// import SocialLinks from './pages/SocialLinks';
+import SocialLinks from './components/layout/SocialLinks';
 import NotFound from "./pages/NotFound";
 
 // import Header from "./components/layout/Header.tsx";
@@ -64,13 +64,11 @@ const App = (props) => (
         <header class="flex justify-between items-center p-4 bg-white dark:bg-gray-800 shadow-sm">
           <h2 class="text-xl font-semibold"><Branding></Branding></h2>
 
+          <SocialLinks></SocialLinks>
           <button
             class="px-3 py-1 rounded bg-blue-600 text-white hover:bg-blue-700"
-            onClick={() =>
-              document.documentElement.classList.toggle("dark")
-            }
-          >
-            Toggle Theme
+            onClick={() => document.documentElement.classList.toggle("dark")}>
+            <Icon name="moon" class="w-6 h-6 text-blue-500" />
           </button>
         </header>
 
