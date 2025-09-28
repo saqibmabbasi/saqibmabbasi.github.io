@@ -27,8 +27,6 @@ import Icon from "./components/layout/Icon";
 
 const [sidebarOpen, setSidebarOpen] = createSignal(true);
 
-const userIcon = icon(faUser).html[0];
-
 
 const App = (props) => (
   <>
@@ -96,13 +94,12 @@ render(
       <Route path="/" component={Home} />
       <Route path="/about-me" component={AboutMe} />
       <Route path="/achievements" component={Achievements} />
-      <Route path="/academics" component={Academics} />
-      <Route path="/experience" component={Experience} />
-      <Route path="/experiences" component={Experiences} />
-      <Route path="/project" component={Project} />
       <Route path="/projects" component={Projects} />
       <Route path="/skills" component={Skills} />
-      <Route path="/social-links" component={SocialLinks} />
+      <Route path="/academics" component={Academics} />
+      <Route path="/experiences" component={Experiences} />
+      {/* <Route path="/social-links" component={SocialLinks} /> */}
+      {/* <Route path="/project" component={Project} /> */}
 
       <Route path="/public" element={<Navigate href="/" />} />
 

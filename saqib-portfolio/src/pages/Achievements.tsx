@@ -3,10 +3,10 @@ import achievements from "../data-files/achievements";
 
 export default function Achievements(){
     return (
-        <ul>
+        <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(200px,1fr))]">
             {achievements.map(p => (
-                <li>{p.title} ({p.beneficiary})</li>
+                <div className="p-4">{p.title} ({p.beneficiary})</div>
             ))}
-        </ul>
+        </div>
     );
 }

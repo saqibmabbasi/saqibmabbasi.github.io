@@ -1,6 +1,6 @@
 import { A } from "@solidjs/router";
 
-import sociallinks from '../data-files/social-network.json';
+import sociallinks from '../../data-files/social-network.json';
 
 export default function SocialLinks(){
     return (

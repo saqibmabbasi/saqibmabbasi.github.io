@@ -2,16 +2,16 @@ import experiences from '../data-files/experiences'
 
 export default function Experiences(){
     return (
-        <ul>
+        <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(200px,1fr))]">
             {experiences.map(p => (
-                <li>{p.companyName} ({p.designation} - {p.fromDate} - {p.toDate})
+                <div className="p-4">{p.companyName} ({p.designation} - {p.fromDate} - {p.toDate})
                     <ul>
                         {p.tasks.map(e => (
-                            <li>{e.task}</li>
+                            <li className="p-4">{e.task}</li>
                         ))}
                     </ul>
-                </li>
+                </div>
             ))}
-        </ul>
+        </div>
     );
 }
