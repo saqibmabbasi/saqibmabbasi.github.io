@@ -5,16 +5,16 @@ import sociallinks from '../data-files/social-network.json';
 export default function SocialLinks(){
     return (
         <>
-            <ul>
+            <div>
                 {sociallinks.map(p => (
-                <li>
+                <div>
                     <A href={p.url} title={p.title}>
                         <span class={p.icon}></span>
                         {p.name}
                     </A>
-                </li>
+                </div>
             ))}
-            </ul>
+            </div>
         </>
     )
 }

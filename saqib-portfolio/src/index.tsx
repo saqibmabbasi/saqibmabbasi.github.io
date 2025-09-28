@@ -25,13 +25,12 @@ import Branding from "./components/page/Branding.tsx";
 const [sidebarOpen, setSidebarOpen] = createSignal(true);
 
 const App = (props) => (
-    <>
+  <>
     <div class="flex h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       {/* Sidebar */}
       <aside
-        class={`${
-          sidebarOpen() ? "w-64" : "w-20"
-        } bg-white dark:bg-gray-800 shadow-md transition-all duration-300`}
+        class={`${sidebarOpen() ? "w-64" : "w-20"
+          } bg-white dark:bg-gray-800 shadow-md transition-all duration-300`}
       >
         <div class="flex items-center justify-between p-4 border-b dark:border-gray-700">
           <h1 class={`${sidebarOpen() ? "block" : "hidden"} text-xl font-bold`}>
@@ -44,43 +43,46 @@ const App = (props) => (
             ☰
           </button>
         </div>
-          <div class={`${sidebarOpen() ? "block" : "hidden"}`}>
-        <SideNavigation></SideNavigation>
+        <div class={`${sidebarOpen() ? "block" : "hidden"}`}>
+          <SideNavigationMenu></SideNavigationMenu>
+        </div>
+        <div class={`${!sidebarOpen() ? "block" : "hidden"}`}>
+          <SideNavigationBar></SideNavigationBar>
         </div>
       </aside>
 
       {/* Main Content */}
-        <main class="flex-1 flex flex-col">
-            {/* Header */}
-            <header class="flex justify-between items-center p-4 bg-white dark:bg-gray-800 shadow-sm">
-                <h2 class="text-xl font-semibold"><Branding></Branding></h2>
+      <main class="flex-1 flex flex-col">
+        {/* Header */}
+        <header class="flex justify-between items-center p-4 bg-white dark:bg-gray-800 shadow-sm">
+          <h2 class="text-xl font-semibold"><Branding></Branding></h2>
 
-                <button
-                    class="px-3 py-1 rounded bg-blue-600 text-white hover:bg-blue-700"
-                    onClick={() =>
-                        document.documentElement.classList.toggle("dark")
-                    }
-                >
-                    Toggle Theme
-                </button>
-            </header>
+          <button
+            class="px-3 py-1 rounded bg-blue-600 text-white hover:bg-blue-700"
+            onClick={() =>
+              document.documentElement.classList.toggle("dark")
+            }
+          >
+            Toggle Theme
+          </button>
+        </header>
 
-            {/*<Header></Header>*/}
+        {/*<Header></Header>*/}
 
 
 
-            {/* Content */}
-            <section class="flex-1 flex flex-col">
-                <div>
-                    {props.children}
-                </div>
-            </section>
+        {/* Content */}
+        <section class="flex-1 flex flex-col">
+          <div>
+            {props.children}
+          </div>
+        </section>
 
-            <Footer></Footer>
-        </main>
+        <Footer></Footer>
+      </main>
     </div>
 
-        {/* <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    {/* <div className="min-h-screen flex items-center justify-center bg-gray-100">
         <h1 className="text-4xl font-bold text-blue-600">
           Tailwind is working 🎉
         </h1>
@@ -88,32 +90,32 @@ const App = (props) => (
         <SocialLinks></SocialLinks>
         <SideNavigation></SideNavigation>
         </div> */}
-    </>
+  </>
 );
 
 render(
-    () => (
-        // <DashboardLayout />,
-        <Router root={App}>
-            <Route path="/" component={Home} />
-        <Route path="/about-me" component={AboutMe} />
-        <Route path="/achievements" component={Achievements} />
-        <Route path="/academics" component={Academics} />
-        <Route path="/experience" component={Experience} />
-        <Route path="/experiences" component={Experiences} />
-        <Route path="/project" component={Project} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/skills" component={Skills} />
-        <Route path="/social-links" component={SocialLinks} />
+  () => (
+    // <DashboardLayout />,
+    <Router root={App}>
+      <Route path="/" component={Home} />
+      <Route path="/about-me" component={AboutMe} />
+      <Route path="/achievements" component={Achievements} />
+      <Route path="/academics" component={Academics} />
+      <Route path="/experience" component={Experience} />
+      <Route path="/experiences" component={Experiences} />
+      <Route path="/project" component={Project} />
+      <Route path="/projects" component={Projects} />
+      <Route path="/skills" component={Skills} />
+      <Route path="/social-links" component={SocialLinks} />
 
-        <Route path="/public" element={<Navigate href="/" />} />
+      <Route path="/public" element={<Navigate href="/" />} />
 
-        <Route path="*paramName" component={NotFound} />
+      <Route path="*paramName" component={NotFound} />
     </Router>
   ),
   // <h1 class="text-4xl font-bold text-blue-600">Hello Tailwind!</h1>, 
   document.getElementById("root")
- 
+
 );
 
 //  render(() => <DashboardLayout />, document.getElementById("root") as HTMLElement);

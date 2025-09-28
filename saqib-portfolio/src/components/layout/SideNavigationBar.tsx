@@ -1,22 +1,29 @@
 import { A } from "@solidjs/router";
 
-export default function SideNavigation() {
+export default function SideNavigationBar() {
     return <>
         <nav class="p-4 space-y-1">
             <A class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" 
-                href="/">Home</A>
+                href="/"><span class="fa fa-home"></span></A>
+
             <A class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" 
                 href="/about-me">About Me</A>
+
             <A class="block px-3 py-2 rounded-md hover:bg-blue-600 dark:hover:bg-gray-700"
                 href="/achievements">Achievements</A>
+
             <A class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" 
-                href='/academics'>Academics</A>
-            <A class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" 
-                href='/experiences'>Experiences</A>
-            <A class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" 
-                href='/projects'>Projects</A>
+                href='/projects'>Portfolio</A>
+
             <A class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" 
                 href='/skills'>Skills</A>
+
+            <A class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" 
+                href='/experiences'>Experiences</A>
+
+            <A class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" 
+                href='/academics'>Academics</A>
+
         </nav>
     </>
 }
