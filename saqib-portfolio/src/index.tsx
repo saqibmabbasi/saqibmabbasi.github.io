@@ -14,7 +14,7 @@ import Home from './pages/Home';
 import Project from './components/page/Project.tsx';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
-import SocialLinks from './pages/SocialLinks';
+// import SocialLinks from './pages/SocialLinks';
 import NotFound from "./pages/NotFound";
 
 // import Header from "./components/layout/Header.tsx";
