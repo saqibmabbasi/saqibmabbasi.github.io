@@ -5,9 +5,9 @@ import sociallinks from '../data-files/social-network.json';
 export default function SocialLinks(){
     return (
         <>
-            <div>
+            <div class="flex flex-wrap gap-4">
                 {sociallinks.map(p => (
-                <div>
+                <div class="bg-blue-300 p-4 w-48">
                     <A href={p.url} title={p.title}>
                         <span class={p.icon}></span>
                         {p.name}

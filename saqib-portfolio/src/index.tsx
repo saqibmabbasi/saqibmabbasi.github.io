@@ -18,7 +18,8 @@ import SocialLinks from './pages/SocialLinks';
 import NotFound from "./pages/NotFound";
 
 // import Header from "./components/layout/Header.tsx";
-import SideNavigation from "./components/layout/SideNavigation.tsx";
+import SideNavigationMenu from "./components/layout/SideNavigationMenu.tsx";
+import SideNavigationBar from "./components/layout/SideNavigationBar.tsx";
 import Footer from "./components/layout/Footer.tsx";
 import Branding from "./components/page/Branding.tsx";
 
@@ -67,10 +68,6 @@ const App = (props) => (
           </button>
         </header>
 
-        {/*<Header></Header>*/}
-
-
-
         {/* Content */}
         <section class="flex-1 flex flex-col">
           <div>
@@ -81,15 +78,6 @@ const App = (props) => (
         <Footer></Footer>
       </main>
     </div>
-
-    {/* <div className="min-h-screen flex items-center justify-center bg-gray-100">
-        <h1 className="text-4xl font-bold text-blue-600">
-          Tailwind is working 🎉
-        </h1>
-        <Header></Header>
-        <SocialLinks></SocialLinks>
-        <SideNavigation></SideNavigation>
-        </div> */}
   </>
 );
 
