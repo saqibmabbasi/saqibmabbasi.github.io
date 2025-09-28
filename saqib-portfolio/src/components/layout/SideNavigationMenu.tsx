@@ -1,6 +1,6 @@
 import { A } from "@solidjs/router";
 
-import Icon from "../components/layout/Icon";
+import Icon from "./Icon";
 
 export default function SideNavigationMenu() {
     return <>
