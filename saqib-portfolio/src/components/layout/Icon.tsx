@@ -1,10 +1,11 @@
 // src/components/Icon.tsx
-import { JSX } from "solid-js";
-import { icon, IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import type { JSX } from "solid-js";
+import { icon } from "@fortawesome/fontawesome-svg-core";
+import type { IconDefinition } from "@fortawesome/free-solid-svg-icons";
 
 // Import the icons you need
 import { faUser, faHome, faCog, faMoon, faLandmark, faSchool, faBriefcase } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedinIn, faGitlab, faGoogle, faWordpress, faFacebookF, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 // Map icon names to Font Awesome definitions
 const iconMap: Record<string, IconDefinition> = {
@@ -16,6 +17,13 @@ const iconMap: Record<string, IconDefinition> = {
   briefcase: faBriefcase,
   school: faSchool,
   github: faGithub,
+  linkedin: faLinkedinIn,
+  gitlab: faGitlab,
+  google: faGoogle,
+  wordpress: faWordpress,
+  facebook: faFacebookF,
+  twitter: faTwitter,
+  instagram: faInstagram,
 };
 
 interface IconProps {

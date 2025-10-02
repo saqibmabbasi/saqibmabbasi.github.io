@@ -2,7 +2,7 @@ import { A } from "@solidjs/router";
 
 import Icon from "./Icon";
 
-export default function SideNavigationMenu() {
+export default function MobileNavigationMenu() {
     return <>
         <nav class="p-4 space-y-1">
             <A class="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" 
