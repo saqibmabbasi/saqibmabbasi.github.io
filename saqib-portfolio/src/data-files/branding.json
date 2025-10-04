@@ -2,6 +2,6 @@
     "name": "Saqib Mustafa Abbasi",
     "shortName": "SMA",
     "name_route": "/",
-    "logo_path": "assets/images/SMA_Logo.jpg",
+    "logo_path": "assets/images/SMA_Logo.png",
     "logo_route": "/"
 }
