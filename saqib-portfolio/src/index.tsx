@@ -3,7 +3,7 @@ import './index.css';
 /* @refresh reload */
 import { render } from 'solid-js/web'
 import { Router, Route, Navigate } from "@solidjs/router";
-import { createSignal, onMount, onCleanup } from "solid-js";
+import { createSignal, onMount, onCleanup, createEffect } from "solid-js";
 import type { Component, JSX } from "solid-js";
 
 import AboutMe from "./pages/AboutMe"
@@ -30,6 +30,7 @@ import Icon from "./components/layout/Icon";
 
 const [sidebarOpen, setSidebarOpen] = createSignal(true);
 const [isMobile, setIsMobile] = createSignal(false);
+const [isDarkMode, setIsDarkMode] = createSignal(true);
 
 // Check screen size and set mobile state
 const checkScreenSize = () => {
@@ -40,14 +41,35 @@ const checkScreenSize = () => {
   }
 };
 
+// Initialize theme based on html class
 onMount(() => {
   checkScreenSize();
   window.addEventListener('resize', checkScreenSize);
+  setIsDarkMode(document.documentElement.classList.contains("dark"));
 });
 
 onCleanup(() => {
   window.removeEventListener('resize', checkScreenSize);
 });
+
+// Watch for changes to the dark class on the html element
+createEffect(() => {
+  const observer = new MutationObserver(() => {
+    setIsDarkMode(document.documentElement.classList.contains("dark"));
+  });
+  
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ["class"]
+  });
+  
+  return () => observer.disconnect();
+});
+
+const toggleTheme = () => {
+  document.documentElement.classList.toggle("dark");
+  setIsDarkMode(document.documentElement.classList.contains("dark"));
+};
 
 const App: Component<{ children?: JSX.Element }> = (props) => (
   <>
@@ -121,10 +143,14 @@ const App: Component<{ children?: JSX.Element }> = (props) => (
       {/* Floating theme toggler on the right side of the page */}
       <button
         class="fixed right-4 bottom-4 md:right-8 md:bottom-8 w-12 h-12 rounded-full bg-blue-600 text-white shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 z-30 flex items-center justify-center"
-        onClick={() => document.documentElement.classList.toggle("dark")}
+        onClick={toggleTheme}
         title="Toggle theme"
       >
-        <Icon name="moon" class="w-6 h-6" />
+        {isDarkMode() ? (
+          <Icon name="sun" class="w-6 h-6" />
+        ) : (
+          <Icon name="moon" class="w-6 h-6" />
+        )}
       </button>
     </div>
   </>

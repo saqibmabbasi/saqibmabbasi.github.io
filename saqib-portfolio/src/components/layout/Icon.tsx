@@ -4,7 +4,7 @@ import { icon } from "@fortawesome/fontawesome-svg-core";
 import type { IconDefinition } from "@fortawesome/free-solid-svg-icons";
 
 // Import the icons you need
-import { faUser, faHome, faCog, faMoon, faLandmark, faSchool, faBriefcase, faHistory } from "@fortawesome/free-solid-svg-icons";
+import { faUser, faHome, faCog, faMoon, faLandmark, faSchool, faBriefcase, faHistory, faSun } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedinIn, faGitlab, faGoogle, faWordpress, faFacebookF, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 // Map icon names to Font Awesome definitions
@@ -13,6 +13,7 @@ const iconMap: Record<string, IconDefinition> = {
   home: faHome,
   settings: faCog,
   moon: faMoon,
+  sun: faSun,
   landmark: faLandmark,
   briefcase: faBriefcase,
   school: faSchool,
