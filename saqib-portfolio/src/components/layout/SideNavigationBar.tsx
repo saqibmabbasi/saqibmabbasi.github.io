@@ -21,10 +21,7 @@ export default function SideNavigationBar() {
                 href='/skills'><Icon name="settings" class="w-6 h-6 text-blue-500" /></A>
 
             <A class="flex items-center justify-center p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" 
-                href='/experiences'><Icon name="briefcase" class="w-6 h-6 text-blue-500" /></A>
-
-            <A class="flex items-center justify-center p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" 
-                href='/academics'><Icon name="school" class="w-6 h-6 text-blue-500" /></A>
+                href='/timeline'><Icon name="history" class="w-6 h-6 text-blue-500" /></A>
 
         </nav>
     </>

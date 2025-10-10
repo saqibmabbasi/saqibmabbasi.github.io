@@ -15,11 +15,17 @@ const getLevelWidth = (level: string) => {
 };
 
 export default function Skills(){
+    // Create a deep copy of skills and sort each category's skills by level (descending)
+    const sortedSkills = skills.map(category => ({
+        ...category,
+        skills: [...category.skills].sort((a, b) => parseInt(b.level) - parseInt(a.level))
+    }));
+
     return (
         <div class="max-w-6xl mx-auto p-4">
             <h1 class="text-3xl font-bold mb-8 text-center">My Skills</h1>
             <div class="grid gap-8 md:grid-cols-2">
-                {skills.map((skillCategory: any, index: number) => (
+                {sortedSkills.map((skillCategory: any, index: number) => (
                     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
                         <h2 class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200 dark:border-gray-700">
                             {skillCategory.type}

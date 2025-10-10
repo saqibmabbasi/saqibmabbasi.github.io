@@ -13,10 +13,11 @@ import Achievements from "./pages/Achievements"
 import Experiences from "./pages/Experiences"
 import Home from './pages/Home';
 // import Project from './components/page/Project.tsx';
-import Projects from './pages/Projects';
+import Portfolio from './pages/Portfolio';
 import Skills from './pages/Skills';
 import SocialLinks from './components/layout/SocialLinks';
 import NotFound from "./pages/NotFound";
+import Timeline from "./pages/Timeline";
 
 // import Header from "./components/layout/Header.tsx";
 import SideNavigationMenu from "./components/layout/SideNavigationMenu.tsx";
@@ -136,10 +137,11 @@ render(
       <Route path="/" component={Home} />
       <Route path="/about-me" component={AboutMe} />
       <Route path="/achievements" component={Achievements} />
-      <Route path="/projects" component={Projects} />
+      <Route path="/projects" component={Portfolio} />
       <Route path="/skills" component={Skills} />
       <Route path="/academics" component={Academics} />
       <Route path="/experiences" component={Experiences} />
+      <Route path="/timeline" component={Timeline} />
       {/* <Route path="/social-links" component={SocialLinks} /> */}
       {/* <Route path="/project" component={Project} /> */}
 

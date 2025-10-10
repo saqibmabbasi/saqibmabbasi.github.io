@@ -21,10 +21,7 @@ export default function SideNavigationMenu() {
                 href='/skills'><Icon name="settings" class="w-6 h-6 text-blue-500" /> <span>Skills</span></A>
 
             <A class="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" 
-                href='/experiences'><Icon name="briefcase" class="w-6 h-6 text-blue-500" /> <span>Experiences</span></A>
-
-            <A class="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" 
-                href='/academics'><Icon name="school" class="w-6 h-6 text-blue-500" /> <span>Academics</span></A>
+                href='/timeline'><Icon name="history" class="w-6 h-6 text-blue-500" /> <span>Timeline</span></A>
 
         </nav>
     </>
