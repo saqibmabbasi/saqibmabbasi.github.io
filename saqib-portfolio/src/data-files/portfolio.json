@@ -1,22 +1,65 @@
 [
-    {
+  {
+    "section": "Official Projects",
+    "projects": [
+      {
         "projectName": "Employee Self Service",
-        "natureOfProject": "Development"
-    },
-    {
-        "projectName": "Telephone Directory",
-        "natureOfProject": "Development"
-    },
-    {
-        "projectName": "Telephone Directory",
-        "natureOfProject": "Development"
-    },
-    {
-        "projectName": "Telephone Directory",
-        "natureOfProject": "Development"
-    },
-    {
-        "projectName": "Telephone Directory",
-        "natureOfProject": "Development"
-    }
+        "description": "Employee Self Service is a web based application which is used to manage employee details.",
+        "companyName": "Feroze1888 Mills Ltd.",
+        "natureOfProject": "Development",
+        "technologies": {
+          "frontEnd": "Angular 8",
+          "backEnd": ".Net C# 4.6.1",
+          "database": "Oracle EBS 12.2.12"
+        }
+      }
+    ]
+  },
+  {
+    "section": "Freelance Projects",
+    "projects": []
+  },
+  {
+    "section": "Personal Projects",
+    "projects": [
+      {
+        "projectName": "Task Management App",
+        "description": "A productivity application for managing daily tasks with reminders.",
+        "companyName": "Personal Project",
+        "natureOfProject": "Development",
+        "technologies": {
+          "frontEnd": "Vue.js",
+          "backEnd": "Firebase",
+          "database": "Firestore"
+        }
+      },
+      {
+        "projectName": "Weather Forecast Dashboard",
+        "description": "Real-time weather information dashboard with location detection.",
+        "companyName": "Personal Project",
+        "natureOfProject": "Development",
+        "technologies": {
+          "frontEnd": "React.js",
+          "backEnd": "Node.js",
+          "database": "None"
+        }
+      }
+    ]
+  },
+  {
+    "section": "Test Projects",
+    "projects": [
+      {
+        "projectName": "API Testing Framework",
+        "description": "Automated testing framework for RESTful APIs with reporting.",
+        "companyName": "QA Initiative",
+        "natureOfProject": "Testing",
+        "technologies": {
+          "frontEnd": "None",
+          "backEnd": "Python, pytest",
+          "database": "None"
+        }
+      }
+    ]
+  }
 ]
